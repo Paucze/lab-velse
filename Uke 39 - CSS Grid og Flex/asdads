@@ -1,0 +1,28 @@
+
+
+
+#grid-container {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+}
+
+/* Header med et logo-område og en navigasjonsmeny. */
+header{
+    display: grid;
+    grid-column: 1/4;
+}
+
+/* Main-området, som inneholder en overskrift og flere seksjoner (artikler). */
+main{
+    display: grid;
+    grid-column: 2/3;
+}
+
+/* Footer, som har et enkelt tekstinnhold. */
+footer{
+    display: grid;
+    grid-column: 1/4;
+}
